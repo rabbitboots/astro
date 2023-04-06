@@ -616,7 +616,7 @@ Draws the TextBatch Sprite.
 
 # Usage Notes
 
-* Gamma correct rendering: During LÖVE's boot-up, if JIT and FFI are active, then optimized versions of `love.math.gammaToLinear()` and `love.math.linearToGamma()` are swapped in. If you need to disable JIT for whatever reason, do so in conf.lua before this optimization takes effect.
+* Gamma correct rendering: During LÖVE's boot-up, if JIT and FFI are active, then optimized versions of `love.math.gammaToLinear()` and `love.math.linearToGamma()` are swapped in. If you need to completely disable JIT on the main thread for whatever reason, do so in conf.lua before this optimization takes effect.
 
 * LÖVE 11.3: the `smooth` line style is linked to a rare crashing bug. This is fixed in 11.4. Upgrading is strongly recommended.
 
