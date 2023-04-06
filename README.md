@@ -5,6 +5,9 @@
 Astro is a sprite container library for the LÖVE Framework.
 
 
+![astro_demo_pic](https://user-images.githubusercontent.com/23288188/230383433-d42e5d86-b1e0-40fc-b4bd-db0acea10bdd.png)
+
+
 # What's Included
 
 * Sprite objects for:
