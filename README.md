@@ -180,7 +180,7 @@ Draws the Arc Sprite.
 
 * `y`: Y drawing offset.
 
-**NOTE:** This can be overwritten with `astro.defs.arc.drawB`, An alternative draw method that renders both the fill and stroke. See `spr_arc.lua` for more info.
+**NOTE:** This can be overwritten with `astro.defs.arc.drawB`, an alternative draw method that renders both the fill and stroke. See `spr_arc.lua` for more info.
 
 
 ## Circle Sprite
@@ -213,7 +213,7 @@ Draws the Circle Sprite.
 
 * `y`: Y drawing offset.
 
-**NOTE:** This can be overwritten with `astro.defs.circle.drawB`, An alternative draw method that renders both the fill and stroke. See `spr_circle.lua` for more info.
+**NOTE:** This can be overwritten with `astro.defs.circle.drawB`, an alternative draw method that renders both the fill and stroke. See `spr_circle.lua` for more info.
 
 
 ## Ellipse Sprite
@@ -248,7 +248,7 @@ Draws the Ellipse Sprite.
 
 * `y`: Y drawing offset.
 
-**NOTE:** This can be overwritten with `astro.defs.ellipse.drawB`, An alternative draw method that renders both the fill and stroke. See `spr_ellipse.lua` for more info.
+**NOTE:** This can be overwritten with `astro.defs.ellipse.drawB`, an alternative draw method that renders both the fill and stroke. See `spr_ellipse.lua` for more info.
 
 
 ## Group Sprite
@@ -445,7 +445,7 @@ Draws the Polygon Sprite.
 
 * `y`: Y drawing offset.
 
-**NOTE:** This can be overwritten with `astro.defs.polygon.drawB`, An alternative draw method that renders both the fill and stroke. See `spr_polygon.lua` for more info.
+**NOTE:** This can be overwritten with `astro.defs.polygon.drawB`, an alternative draw method that renders both the fill and stroke. See `spr_polygon.lua` for more info.
 
 
 ## Print Sprite
@@ -513,7 +513,7 @@ Draws the Rectangle Sprite.
 
 * `y`: Y drawing offset.
 
-**NOTE:** This can be overwritten with `astro.defs.rect.drawB`, An alternative draw method that renders both the fill and stroke. See `spr_rect.lua` for more info.
+**NOTE:** This can be overwritten with `astro.defs.rect.drawB`, an alternative draw method that renders both the fill and stroke. See `spr_rect.lua` for more info.
 
 
 ## Slice Sprite
