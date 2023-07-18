@@ -131,7 +131,7 @@ local spr_pumpkin3 = astro.newImage(img_pumpkin, quad1)
 
 local img_window = love.graphics.newImage("demo_res/9slice.png")
 img_window:setFilter("nearest", "nearest")
-local slice_def = quadSlice.new9Slice(0,0, 16,16, 16,16, 16,16, img_window:getDimensions())
+local slice_def = quadSlice.newSlice(0,0, 16,16, 16,16, 16,16, img_window:getDimensions())
 local spr_slice = astro.newSlice(img_window, slice_def, false)
 
 local img_palette = love.graphics.newImage("demo_res/27_colors.png")

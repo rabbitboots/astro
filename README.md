@@ -1,4 +1,4 @@
-**Version 1.0.0**
+**Version 1.1.0** -- See CHANGELOG.md for breaking changes from 1.0.0.
 
 # Astro
 
@@ -11,22 +11,34 @@ Astro is a sprite container library for the LÖVE Framework.
 # What's Included
 
 * Sprite objects for:
+
   * Textures + Quads
-  * 9-Slices (via [QuadSlice](https://github.com/rabbitboots/quad_slice))
+
+  * 9-Slices (via [QuadSlice 1.3.0](https://github.com/rabbitboots/quad_slice))
+
   * Meshes
+
   * SpriteBatches
+
   * TextBatches
+
   * `love.graphics.print` and `love.graphics.printf`
+
   * `love.graphics` shapes: Arc, Circle, Ellipse, Line, Points, Polygon, Rectangle
+
 * *Group* Sprites to draw multiple Sprites with shared color and transform state
+
 * Alternative *Fill+Stroke* draw methods for shapes with both [DrawModes](https://love2d.org/wiki/DrawMode)
 
 
 # What's Missing
 
 * Considerations for stencils and GL scissor-boxes
+
 * Considerations for shaders
+
 * Considerations for sprite pooling
+
 * Missing an object for LÖVE Particle Systems
 
 
@@ -527,6 +539,8 @@ Implementation: `spr_slice.lua` (See also `lib/quad_slice.lua`)
 
 LÖVE: *N/A*
 
+**NOTE:** This is basically a wrapper around [QuadSlice 1.3.0](https://github.com/rabbitboots/quad_slice). For more info, please refer to that library's documentation and examples.
+
 
 ### astro.newSlice
 
@@ -621,7 +635,7 @@ Draws the TextBatch Sprite.
 
 * Gamma correct rendering: During LÖVE's boot-up, if JIT and FFI are active, then optimized versions of `love.math.gammaToLinear()` and `love.math.linearToGamma()` are swapped in. If you need to completely disable JIT on the main thread for whatever reason, do so in conf.lua before this optimization takes effect.
 
-* LÖVE 11.3: the `smooth` line style is linked to a rare crashing bug. This is fixed in 11.4. Upgrading is strongly recommended.
+* LÖVE 11.3: the `smooth` line style is linked to a rare crashing bug. This is fixed in 11.4.
 
 * There are a couple of crash bugs with TextBatches in LÖVE 11.x that are fixed in 12. They involve adding whitespace-only strings, and using small `wraplimit` values when calling `Text:addf()`.
 

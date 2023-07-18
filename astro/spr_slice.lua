@@ -28,25 +28,20 @@ style.h = 0
 
 style.image = false
 style.slice = false
-style.hollow = false
 
 
-function def.new(image, slice, hollow)
-
-	hollow = hollow or false
+function def.new(image, slice)
 
 	-- Assertions
 	-- [[
 	if type(image) ~= "userdata" then aCore.errBadType(1, image, "userdata (LÖVE Image)")
-	elseif type(slice) ~= "table" then aCore.errBadType(2, slice, "table")
-	elseif hollow and type(hollow) ~= "boolean" then aCore.errBadType(3, hollow, "nil/boolean") end
+	elseif type(slice) ~= "table" then aCore.errBadType(2, slice, "table") end
 	--]]
 
 	local self = setmetatable({}, style)
 
 	self.image = image
 	self.slice = slice
-	self.hollow = hollow
 
 	return self
 end
@@ -76,7 +71,7 @@ function style:draw(x, y)
 	)
 	love.graphics.applyTransform(temp_transform)
 
-	quadSlice.draw(self.image, self.slice, 0, 0, self.w, self.h, self.hollow)
+	self.slice:draw(self.image, 0, 0, self.w, self.h)
 
 	love.graphics.pop()
 end
